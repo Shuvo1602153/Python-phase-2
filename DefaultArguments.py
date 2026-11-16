@@ -1,6 +1,10 @@
-def hello_function(name, message ='Hello'):
-    return f"{message} ,{name}"
-message = input('please left a message')
-name = input ("What is your name :")
+def greetings(name, message="Assala mualaikum"):
+    return f"{message} , {name}"
 
-print(hello_function(name,message))
+message = input("Please Leave a Message: ")
+name = input("What is your name ? : ")
+
+if message:
+    print(greetings(name, message))
+else:
+    print(greetings(name))
